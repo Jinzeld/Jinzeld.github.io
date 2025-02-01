@@ -24,7 +24,7 @@ const AboutMe = () => {
             <a href="https://github.com/Jinzeld" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/jinzeld" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/jinhui-zhen" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
