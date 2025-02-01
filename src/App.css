@@ -1,18 +1,70 @@
+/* App.css */
+/* Light Mode (Default) */
+.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.light-mode .navbar {
+  background-color: #333;
+  color: white;
+}
+
+.light-mode .navbar ul li {
+  color: white;
+}
+
+.light-mode .navbar ul li:hover {
+  color: #61dafb;
+}
+
+.light-mode .section {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.light-mode .theme-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-mode .navbar ul li {
+  color: white;
+}
+
+.dark-mode .navbar ul li:hover {
+  color: #61dafb;
+}
+
+.dark-mode .section {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark-mode .theme-toggle {
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /* General Styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.App {
-  text-align: center;
-}
-
-/* Navigation Bar */
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #333;
   padding: 10px;
   z-index: 1000;
 }
@@ -23,19 +75,13 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
-.navbar li {
-  margin: 0 15px;
-  color: white;
+.navbar ul li {
   cursor: pointer;
 }
 
-.navbar li:hover {
-  color: #61dafb;
-}
-
-/* Sections */
 .section {
   padding: 100px 20px;
   min-height: 100vh;
@@ -43,17 +89,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
   border-bottom: 2px solid #ddd;
 }
 
-.section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.section p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  line-height: 1.6;
+.theme-toggle {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

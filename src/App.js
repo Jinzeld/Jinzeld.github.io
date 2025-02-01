@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
-import AboutMe from "./components/AboutMe"; // Adjust the import path
+import React, { useRef, useState } from "react";
+import Intro from "./components/Intro";
+import AboutMe from "./components/AboutMe";
 import "./App.css";
 
 function App() {
@@ -10,13 +11,21 @@ function App() {
   const skillsRef = useRef(null);
   const resumeRef = useRef(null);
 
+  // State for theme (light/dark mode)
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   // Function to handle smooth scrolling
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Function to toggle theme
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
+    <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       {/* Navigation Bar */}
       <nav className="navbar">
         <ul>
@@ -25,29 +34,44 @@ function App() {
           <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
           <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
           <li onClick={() => scrollToSection(resumeRef)}>Resume</li>
+          {/* Theme Toggle Button */}
+          <li>
+            <button onClick={toggleTheme} className="theme-toggle">
+              {isDarkMode ? "🌞 Light" : "🌙 Dark"}
+            </button>
+          </li>
         </ul>
       </nav>
 
-      {/* Sections */}
+      {/* Intro Section */}
+      <section className="section">
+        <Intro />
+      </section>
+
+      {/* About Me Section */}
       <section ref={aboutRef} className="section">
         <AboutMe />
       </section>
 
+      {/* Experience Section */}
       <section ref={experienceRef} className="section">
         <h2>Experience</h2>
         <p>This is the experience section. List your work experience here.</p>
       </section>
 
+      {/* Projects Section */}
       <section ref={projectsRef} className="section">
         <h2>Projects</h2>
         <p>This is the projects section. Showcase your projects here.</p>
       </section>
 
+      {/* Skills Section */}
       <section ref={skillsRef} className="section">
         <h2>Skills</h2>
         <p>This is the skills section. Highlight your skills here.</p>
       </section>
 
+      {/* Resume Section */}
       <section ref={resumeRef} className="section">
         <h2>Resume</h2>
         <p>This is the resume section. Provide a link to your resume or embed it here.</p>
