@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import AboutMe from "./components/AboutMe"; // Adjust the import path
 import "./App.css";
 
 function App() {
@@ -29,8 +30,7 @@ function App() {
 
       {/* Sections */}
       <section ref={aboutRef} className="section">
-        <h2>About Me</h2>
-        <p>This is the about me section. Add your personal details here.</p>
+        <AboutMe />
       </section>
 
       <section ref={experienceRef} className="section">
