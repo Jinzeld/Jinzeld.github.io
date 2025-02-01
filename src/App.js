@@ -17,7 +17,7 @@ function App() {
 
   // Function to redirect to the resume link
   const redirectToResume = () => {
-    window.location.href = "https://jinzeld.github.io/public/pdf/Resume.pdf";
+    window.location.href = "https://jinzeld.github.io/public/pdf/Jinhui_resume_2025.pdf";
   };
 
   return (
