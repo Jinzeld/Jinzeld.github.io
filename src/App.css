@@ -1,36 +1,4 @@
-/* App.css */
-/* Light Mode (Default) */
-.light-mode {
-  background-color: #ffffff;
-  color: #333;
-}
-
-.light-mode .navbar {
-  background-color: #333;
-  color: white;
-}
-
-.light-mode .navbar ul li {
-  color: white;
-}
-
-.light-mode .navbar ul li:hover {
-  color: #61dafb;
-}
-
-.light-mode .section {
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-.light-mode .theme-toggle {
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dark Mode */
+/* Dark Mode (Default) */
 .dark-mode {
   background-color: #121212;
   color: #ffffff;
@@ -56,6 +24,37 @@
 
 .dark-mode .theme-toggle {
   background-color: #1f1f1f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.light-mode .navbar {
+  background-color: #333;
+  color: white;
+}
+
+.light-mode .navbar ul li {
+  color: white;
+}
+
+.light-mode .navbar ul li:hover {
+  color: #61dafb;
+}
+
+.light-mode .section {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.light-mode .theme-toggle {
+  background-color: #333;
   color: white;
   border: none;
   cursor: pointer;
@@ -108,5 +107,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #ddd;
+  border-bottom: none;
 }

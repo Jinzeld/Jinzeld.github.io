@@ -13,9 +13,9 @@ function App() {
 
   // State for theme (light/dark mode)
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check localStorage for saved theme preference
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? savedTheme === "dark" : true; // Default to dark mode
+    if (savedTheme) return savedTheme === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
   // Function to handle smooth scrolling

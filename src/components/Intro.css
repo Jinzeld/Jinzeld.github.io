@@ -1,0 +1,73 @@
+/* Intro.css */
+.intro-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212; /* Light background for contrast */
+  }
+  
+  .intro-container {
+    display: flex;
+    width: 100%;
+    max-width: max-content; /* Adjust as needed */
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .intro-image {
+    flex: 1; /* Takes up half the space */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+  }
+  
+  .intro-image img {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image covers the area */
+  }
+  
+  .intro-text {
+    flex: 1; /* Takes up half the space */
+    padding: 0 40px; /* Add some padding */
+  }
+  
+  .intro-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .intro-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column;
+    }
+  
+    .intro-image {
+      width: 100%;
+      height: 50vh; /* Half the viewport height on smaller screens */
+    }
+  
+    .intro-image img {
+      height: 50vh;
+    }
+  
+    .intro-text {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .intro-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .intro-text p {
+      font-size: 1.2rem;
+    }
+  }
