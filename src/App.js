@@ -12,7 +12,11 @@ function App() {
   const resumeRef = useRef(null);
 
   // State for theme (light/dark mode)
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Check localStorage for saved theme preference
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? savedTheme === "dark" : true; // Default to dark mode
+  });
 
   // Function to handle smooth scrolling
   const scrollToSection = (ref) => {
@@ -28,19 +32,20 @@ function App() {
     <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       {/* Navigation Bar */}
       <nav className="navbar">
-        <ul>
-          <li onClick={() => scrollToSection(aboutRef)}>About Me</li>
-          <li onClick={() => scrollToSection(experienceRef)}>Experience</li>
-          <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-          <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
-          <li onClick={() => scrollToSection(resumeRef)}>Resume</li>
-          {/* Theme Toggle Button */}
-          <li>
-            <button onClick={toggleTheme} className="theme-toggle">
-              {isDarkMode ? "🌞 Light" : "🌙 Dark"}
-            </button>
-          </li>
-        </ul>
+        <div className="nav-links">
+          <ul>
+            <li onClick={() => scrollToSection(aboutRef)}>About Me</li>
+            <li onClick={() => scrollToSection(experienceRef)}>Experience</li>
+            <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+            <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
+            <li onClick={() => scrollToSection(resumeRef)}>Resume</li>
+          </ul>
+        </div>
+        <div className="theme-toggle-container">
+          <button onClick={toggleTheme} className="theme-toggle">
+            {isDarkMode ? "🌞 Light" : "🌙 Dark"}
+          </button>
+        </div>
       </nav>
 
       {/* Intro Section */}
