@@ -1,0 +1,64 @@
+/* Skills.css */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff; /* Light text */
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-category {
+    background-color: #2c2c2c; /* Dark card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: left;
+  }
+  
+  .skills-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #61dafb; /* Accent color */
+  }
+  
+  .skills-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-category ul li {
+    font-size: 1rem;
+    color: #bbbbbb; /* Lighter text */
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-section {
+      padding: 30px 10px;
+    }
+  
+    .skills-section h2 {
+      font-size: 2rem;
+    }
+  
+    .skills-category {
+      width: 100%;
+    }
+  }

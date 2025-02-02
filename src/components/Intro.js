@@ -1,6 +1,6 @@
 import React from "react";
 import introImage from "./images/intro-image.jpeg"; // Adjust the path to your image
-import "./Intro.css";
+import "./intro.css";
 
 const Intro = () => {
   return (
