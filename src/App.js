@@ -59,6 +59,10 @@ function App() {
       <section ref={experienceRef} className="section">
       <Experience />
       </section>
+
+      <footer className="footer">
+        <p>© 2025 Jinhui Zhen. All rights reserved.</p>
+      </footer>
       
     </div>
   );

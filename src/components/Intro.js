@@ -12,7 +12,7 @@ const Intro = () => {
 
       {/* Intro text on the right */}
       <div className="intro-text">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Hi I'm Jin</h1>
         <p>
           Hi, I'm Jin! I'm a passionate developer who loves building amazing
           things with code. Scroll down to learn more about me and my work.
