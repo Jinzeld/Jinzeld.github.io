@@ -15,8 +15,8 @@ const AboutMe = () => {
           <h2>About Me</h2>
           <p>
             Hi, I'm Jin! I'm a passionate developer with experience in building
-            web applications using React, JavaScript, and other modern
-            technologies. I love solving problems and creating user-friendly
+            web applications using React, JavaScript, and other front-end projects. 
+            I love solving problems and creating user-friendly
             interfaces. In my free time, I enjoy hiking, photography, and
             exploring new technologies.
           </p>
