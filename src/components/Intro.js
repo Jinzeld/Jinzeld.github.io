@@ -3,6 +3,11 @@ import introImage from "./images/intro-image.jpeg"; // Adjust the path to your i
 import "./intro.css";
 
 const Intro = () => {
+
+    // Function to redirect to the resume link
+    const redirectToResume = () => {
+    window.location.href = "https://jinzeld.github.io/public/pdf/Jinhui_resume_2025.pdf";
+};
   return (
     <section id="intro" className="intro-section">
       {/* Image on the left */}
@@ -18,7 +23,10 @@ const Intro = () => {
           and software Developing. I like create my own fun and intresting projects 
           on my free time.
         </p>
+
+        <button className="resumeButton" onClick={redirectToResume}>Resume</button>
       </div>
+
     </section>
   );
 };

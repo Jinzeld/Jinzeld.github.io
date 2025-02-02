@@ -33,12 +33,12 @@ function App() {
           <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
           <li onClick={() => scrollToSection(skillsRef)}>Skills</li>
           <li onClick={() => scrollToSection(experienceRef)}>Experience</li>
-          <li onClick={redirectToResume}>Resume</li> {/* Redirect to resume link */}
+          <li onClick={redirectToResume}>Resume</li> 
         </ul>
       </nav>
 
       {/* Intro Section */}
-      <Intro />
+      <Intro /> 
 
       {/* About Me Section */}
       <section ref={aboutRef} className="section">
