@@ -6,7 +6,7 @@ const Intro = () => {
 
     // Function to redirect to the resume link
     const redirectToResume = () => {
-    window.location.href = "https://jinzeld.github.io/public/pdf/Jinhui_resume_2025.pdf";
+    window.location.href = "https://drive.google.com/file/d/1T2zf4y7MEb5pqOefaMbm57g7YRC7vzyu/view?usp=drive_link";
 };
   return (
     <section id="intro" className="intro-section">
