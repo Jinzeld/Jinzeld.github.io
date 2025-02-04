@@ -13,7 +13,7 @@ const Projects = () => {
       title: "Google Drive Clone",
       description:
         "Developed a cloud-based file storage application using React for the frontend, enabling a responsive and user-friendly interface for file uploads, downloads, and organization.",
-      Languages: ["React", "Firebase", "Javascript", "SQL", "HTML", "CSS"],
+      Languages: ["React", "Supabase", "Javascript", "SQL", "HTML", "CSS"],
       code: "https://github.com/Jinzeld/google-drive-clone.git",
       image: gd_clone, 
     },

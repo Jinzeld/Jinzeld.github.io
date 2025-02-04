@@ -52,6 +52,12 @@
   
   .project-card .Languages {
     font-size: 0.9rem;
+    color: #999999; /* Lighter text */  
+    margin-bottom: 15px;
+  }
+
+  .project-card .Framework {
+    font-size: 0.9rem;
     color: #999999; /* Lighter text */
     margin-bottom: 15px;
   }
