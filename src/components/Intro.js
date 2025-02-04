@@ -6,8 +6,8 @@ const Intro = () => {
 
     // Function to redirect to the resume link
     const redirectToResume = () => {
-    window.location.href = "https://drive.google.com/file/d/1T2zf4y7MEb5pqOefaMbm57g7YRC7vzyu/view?usp=drive_link";
-};
+      window.open("https://drive.google.com/file/d/1T2zf4y7MEb5pqOefaMbm57g7YRC7vzyu/view?usp=drive_link", "_blank");
+    };
   return (
     <section id="intro" className="intro-section">
       {/* Image on the left */}

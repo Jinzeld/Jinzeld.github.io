@@ -2,7 +2,7 @@ import React from "react";
 import { 
   FaHtml5, FaCss3Alt, FaPhp, FaJs, FaDatabase, FaPython, FaJava, FaReact, FaNodeJs, FaGitAlt 
 } from "react-icons/fa";
-import { SiCplusplus, SiLatex, SiEmberdotjs, SiWordpress, SiDocker} from "react-icons/si";
+import { SiCplusplus, SiLatex, SiEmberdotjs, SiWordpress, SiDocker, SiFlutter} from "react-icons/si"; 
 import { MdLanguage } from "react-icons/md";
 import "./skills.css";
 
@@ -24,6 +24,7 @@ const Skills = () => {
       { name: "React", icon: <FaReact /> },
       { name: "Node.js", icon: <FaNodeJs /> },
       { name: "Ember.js", icon: <SiEmberdotjs /> },
+      { name: "Flutter", icon: <SiFlutter /> }, 
       { name: "WordPress", icon: <SiWordpress /> },
     ],
     developerTools: [
