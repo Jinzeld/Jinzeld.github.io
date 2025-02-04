@@ -47,6 +47,7 @@
   .resumeButton:hover{
     color: aqua;
     background-color: #555;
+    transition: background 0.3s ease;
   }
   
   /* Responsive Design */

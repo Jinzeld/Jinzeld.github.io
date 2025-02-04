@@ -20,8 +20,8 @@ const Intro = () => {
         <h1>Hello! I am Jin</h1>
         <p>
           I'm Studying CS @ Oregon State University with a focus in Cybersecurity. I'm intrested in web designing 
-          and software Developing. I like create my own fun and intresting projects 
-          on my free time.
+          and software Developing. I like creating my own fun and intresting projects 
+          on my freetime. 
         </p>
 
         <button className="resumeButton" onClick={redirectToResume}>Resume</button>

@@ -11,7 +11,7 @@
 }
 
 .skills-category {
-  background: #f4f4f4;
+  background: #696969;  
   padding: 20px;
   border-radius: 10px;
   width: 250px;
@@ -19,11 +19,11 @@
 }
 
 h3 {
-  color: #333;
+  color: #ffffff;
 }
 
 .skills-list {
-  list-style: none;
+  list-style: none; 
   padding: 0;
 }
 
@@ -32,7 +32,7 @@ h3 {
   align-items: center;
   gap: 10px;
   font-size: 1.2rem;
-  background: white;
+  background: rgb(95, 95, 95);
   padding: 8px 12px;
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
@@ -44,5 +44,5 @@ h3 {
 
 .skill-item svg {
   font-size: 24px; /* Adjust icon size */
-  color: #007bff; /* Change color based on your theme */
+  color: inherit; 
 }

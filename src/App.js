@@ -4,6 +4,7 @@ import AboutMe from "./components/aboutMe";
 import Project from "./components/project"; 
 import Skills from "./components/skills";
 import Experience from "./components/experiences";
+import Footer from "./components/footer"
 import "./App.css";
 
 
@@ -60,9 +61,17 @@ function App() {
       <Experience />
       </section>
 
-      <footer className="footer">
-        <p>© 2025 Jinhui Zhen. All rights reserved.</p>
-      </footer>
+      {/* Get in Touch Section */}
+      <section className="get-in-touch">
+        <h2>Get in Touch!</h2>
+        <p>Feel free to reach out if you'd like to collaborate or just say hi!</p>
+        <a href="jinhui.zhen21@gmail.com" className="contact-button">
+          Contact Me  
+        </a>
+      </section>
+
+      {/*Footer*/}
+      <Footer />
       
     </div>
   );

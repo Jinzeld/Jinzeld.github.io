@@ -1,0 +1,29 @@
+.footer {
+    background-color: #181818;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .icon {
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .github:hover {
+    color: #333; /* GitHub color */
+  }
+  

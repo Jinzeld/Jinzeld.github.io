@@ -10,14 +10,14 @@ const Skills = () => {
   // Skills with icons
   const skills = {
     languages: [
-      { name: "HTML", icon: <FaHtml5 /> },
-      { name: "CSS", icon: <FaCss3Alt /> },
-      { name: "PHP", icon: <FaPhp /> },
-      { name: "JavaScript", icon: <FaJs /> },
-      { name: "SQL", icon: <FaDatabase /> },
       { name: "Python", icon: <FaPython /> },
       { name: "C/C++", icon: <SiCplusplus /> },
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt  /> },
+      { name: "JavaScript", icon: <FaJs /> },
+      { name: "SQL", icon: <FaDatabase /> },
       { name: "Java", icon: <FaJava /> },
+      { name: "PHP", icon: <FaPhp  /> },
       { name: "LaTeX", icon: <SiLatex /> },
     ],
     frameworks: [
