@@ -6,6 +6,7 @@
   background-color: #3c3c3c; /* Dark background */
   color: #ffffff; /* Light text */
   min-height: 100vh;
+  overflow-x: hidden; /*fix gap on the right of page*/
 }
 
 /* Navigation Bar */
