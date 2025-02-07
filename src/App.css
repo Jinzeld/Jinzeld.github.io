@@ -2,10 +2,9 @@
 /* General Styles */
 
 body, html {
-  background: linear-gradient(to bottom, #4f4f60, #6363ae, #402173);
+  background: linear-gradient(to bottom, #474747, #404040, #212873);
   background-size: cover;
   background-attachment: fixed;
-  color: white;
   margin: 0;
   padding: 0;
   height: 100%;

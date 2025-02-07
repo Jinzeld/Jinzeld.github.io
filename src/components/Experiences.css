@@ -1,9 +1,10 @@
 /* Experience.css */
 .experience-section {
     padding: 50px 20px;
-    background-color: #1f1f1f; /* Dark background */
+    background: linear-gradient(to bottom, #474747, #363636, #1c1a67);
     color: #ffffff; /* Light text */
     text-align: center;
+    border-radius: 5%;
   }
   
   .experience-section h2 {

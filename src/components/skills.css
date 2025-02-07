@@ -11,7 +11,7 @@
 }
 
 .skills-category {
-  background: #696969;  
+  background: linear-gradient(to bottom, #4a4a4a, #595959, #281548); 
   padding: 20px;
   border-radius: 10px;
   width: 250px;
